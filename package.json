@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal Portfolio Site for me (Tomas Wandahl)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass.scss ./dist/css/main.css"
+  },
+  "author": "Tomas Wandahl",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.21.0"
+  }
+}
