@@ -187,6 +187,14 @@ body#homepage {
   overflow: hidden;
 }
 
+.no-bg-img {
+  background-image: none !important;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
 #home {
   overflow: hidden;
   width: 100vw;
@@ -196,6 +204,9 @@ body#homepage {
   background-image: url(../img/bg.jpg);
   background-attachment: fixed;
   background-size: cover;
+}
+#home a {
+  color: #444;
 }
 #home i {
   transition: all 0.5s ease-out;
@@ -223,6 +234,43 @@ body#homepage {
   color: #444;
   width: 500px;
   margin-top: 0px;
+  font-size: 18px;
+}
+
+#about {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem;
+  background-color: rgba(68, 68, 68, 0.2);
+}
+#about i {
+  transition: all 0.5s ease-out;
+  margin-right: 20px;
+}
+#about i:hover {
+  color: #c60021;
+}
+#about .page-title {
+  width: 550px;
+  border: 5px solid #444;
+  margin-left: 10vw;
+  margin-top: 20vh;
+  padding-left: 6rem;
+  padding-bottom: 2rem;
+}
+#about h1 {
+  color: #444;
+  margin-top: 10vh;
+  margin-bottom: 10px;
+  width: 700px;
+  font-size: 3rem;
+}
+#about p {
+  color: #444;
+  width: 700px;
+  margin-top: 0px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */
