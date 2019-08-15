@@ -4,7 +4,8 @@
   "description": "A personal Portfolio Site for me (Tomas Wandahl)",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass.scss ./dist/css/main.css"
+    "sass": "sass --watch ./scss/main.scss ./dist/css/main.css",
+    "deploy-dev": "sass ./scss/main.scss ./dist/css/main.css && surge dist tomas.surge.sh"
   },
   "author": "Tomas Wandahl",
   "license": "ISC",

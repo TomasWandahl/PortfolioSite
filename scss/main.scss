@@ -1,0 +1,62 @@
+@import 'config';
+@import 'menu';
+@import 'mobile';
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    &#homepage {
+        overflow: hidden;
+    }
+}
+
+#home {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem;
+    background-color: rgba($primary-color, 0.2);
+    background-image: $home-image;
+    background-attachment: fixed;
+    background-size: cover; 
+
+    i {
+    @include easeOut;
+      margin-right: 20px;
+      &:hover {
+          color: $secondary-color;
+      }
+    }
+
+    &:after {
+        //content: '';
+        //position: absolute;
+        //top: 0;
+        //right: 0;
+        //width: 100%;
+        //height: 100%;
+        //z-index: -1;
+        //background: rgba($primary-color, 0.8)
+    }
+    & .page-title {
+        width: 550px;
+        border: 5px solid $primary-color;
+        margin-left: 10vw;
+        margin-top: 20vh;
+        padding-left: 6rem;
+        padding-bottom: 2rem;
+    }
+    h1 {
+        color: #444;
+        margin-top: 20vh;
+        margin-bottom: 10px;
+        width: 500px;
+        font-size: 3rem;
+    }
+    p {
+        color: #444;
+        width: 500px;
+        margin-top: 0px;
+    }
+}

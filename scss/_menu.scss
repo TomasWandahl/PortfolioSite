@@ -1,0 +1,129 @@
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include easeOut;
+  
+    .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: #444;
+      @include easeOut;
+      &.close {
+          background: #fff;
+      }
+    }
+  
+    // Rotate Into X With Menu Lines
+    &.close {
+      transform: rotate(180deg);
+  
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+  
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+  
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);
+        }
+      }
+    }
+  }
+
+.menu-nav, .menu-branding {
+    list-style: none;
+    visibility: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    @include easeOut;
+}
+
+.menu-nav {
+    right: 0;
+    text-align: center;
+    background: rgba(darken($primary-color,  5), 0.9);
+    color: #fff;
+    transform: translate3d(0, -100%, 0);
+    a {
+      @include easeOut;
+      color: #fff;
+      text-decoration: none;
+      &.current {
+        color: $secondary-color;
+      }
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+
+&.menu-show {
+    visibility: visible;
+    transform: translate3d(0,0,0);
+}
+}
+.nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+    &.menu-show {
+        transform: translate3d(0,0,0);
+    }
+}
+
+  // Delay each nav item slide by 0.1s
+@for $x from 1 through 4 {
+        .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
+    }   
+}
+.menu-branding {
+    transform: translate3d(0,100%,0);
+    left: 0;
+    text-align: center;
+    color: #f3f3f3;
+    text-transform: capitalize;
+    font-size: 30px;
+    background: darken($primary-color, 10);
+    &.menu-show {
+        visibility: visible;
+        transform: translate3d(0,0,0);
+    }
+    & .logo {
+        width: 250px;
+        height: 250px;
+        
+        margin: 0 auto;
+        border-radius: 50%;
+        background-image: url('../img/profile.jpg');
+        background-size: cover;
+    }
+}
+
+.nav-item {
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 5px 0px 5px 0px;
+    &:hover {
+        color: $secondary-color;
+    }
+    &.current {
+        color: lighten($secondary-color, 5);
+    }
+}
