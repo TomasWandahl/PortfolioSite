@@ -18,8 +18,9 @@ A simple portfolio site that I quickly put together when I was bored. Playing ar
 
 ## BUILT WITH
 
-* [SCSS] (https://sass-lang.com) - CSS preprocessor used
-* [jQuery] (https://jquery.com) - JS-lib used
+* [SCSS] (https://sass-lang.com) - CSS preprocessor used.
+* [jQuery] (https://jquery.com) - JS-lib used.
+* [NPM] (https://nodejs.org) - Package Manager used.
 
 ## AUTHOR
 
