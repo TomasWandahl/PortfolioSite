@@ -1,6 +1,12 @@
 # PERSONAL PORTFOLIO SITE
 A simple portfolio site that I quickly put together when I was bored. Playing around a bit with SCSS.
 
+## CODE
+
+* `./dist/..` contains the main-code that is viewed in the browser.
+* `./scss/..` contains the raw SCSS-files.
+* `.README.md` contains this README.md that you are currently reading.
+
 ## DEVELOPMENT
 
 * Build the website as you normally would do.
